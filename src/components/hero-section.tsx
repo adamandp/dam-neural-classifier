@@ -31,7 +31,6 @@ export default function HeroSection({
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
           <Button
-            size="xl"
             onClick={() => {
               ref.current?.scrollIntoView({
                 behavior: "smooth",
