@@ -10,7 +10,7 @@ export default function Navbar() {
             <SquareActivity className="text-white w-6 h-6" />
           </div>
           <span className="text-lg font-bold tracking-tight dark:text-white">
-            Dam Final Assignment
+            Dam Neural Classifier
           </span>
         </div>
         <ModeToggle />
