@@ -1,6 +1,8 @@
 "use client";
 
+import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
+import Logo from "@/components/icon/logo";
 import Navbar from "@/components/navbar";
 import { ResultChart } from "@/components/result-chart";
 import ScientificSection from "@/components/scientific-section";
@@ -22,6 +24,7 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-slate-950 transition-colors duration-300">
       <Navbar />
+      {/* <Logo /> */}
       <div className="max-w-7xl px-6 xl:px-12 mx-auto">
         <HeroSection ref={analyzeSectionRef} />
         <ScientificSection />
@@ -43,6 +46,7 @@ export default function Home() {
             ref={resultSectionRef}
           />
         )}
+        <Footer />
       </div>
     </main>
   );
