@@ -25,7 +25,7 @@ export default function Home() {
     <main className="bg-white dark:bg-slate-950 transition-colors duration-300">
       <Navbar />
       {/* <Logo /> */}
-      <div className="max-w-7xl px-6 xl:px-12 mx-auto">
+      <div className="max-w-7xl px-c-6 xl:px-c-12 mx-auto">
         <HeroSection ref={analyzeSectionRef} />
         <ScientificSection />
         <UploadArea
