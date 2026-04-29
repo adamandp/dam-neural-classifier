@@ -106,10 +106,10 @@ http://localhost:3000
 The application is deployed on **Vercel**:
 
 - 🔗 **Live Application**
-  [https://dam-creamy-cream.vercel.app/](https://dam-creamy-cream.vercel.app/)
+  [https://dam-neural-classifier.vercel.app/](https://dam-neural-classifier.vercel.app/)
 
 - 💻 **Source Code**
-  [https://github.com/adamandp/dam-creamy-cream](https://github.com/adamandp/dam-creamy-cream)
+  [https://github.com/adamandp/dam-neural-classifier](https://github.com/adamandp/dam-neural-classifier)
 
 ---
 
