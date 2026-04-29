@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Dam Neural Classifier
 
-## Getting Started
+## 📌 Overview
 
-First, run the development server:
+**Dam Neural Classifier** is a web-based application designed to classify brain signal data into clinical diagnostic categories. The system analyzes input signals and predicts whether the condition belongs to one of the following classes:
+
+- **Normal**
+- **Mild Cognitive Impairment (MCI)**
+- **Alzheimer’s Disease**
+
+This project aims to support early-stage experimentation and analysis in neurological condition classification using modern web technologies.
+
+---
+
+## 🎯 Purpose
+
+The primary goal of this project is to provide an interactive interface for visualizing and classifying brain signal data. It can be used for:
+
+- Research prototyping
+- Model integration testing
+- Educational purposes in healthcare and machine learning domains
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- **Next.js** – React framework for building fast and scalable web applications
+
+### Styling
+
+- **Tailwind CSS** – Utility-first CSS framework
+- **shadcn/ui** – Reusable and accessible UI components
+
+### Tools & Libraries
+
+- **TanStack Query** – Data fetching, caching, and state management
+- **Axios** – Promise-based HTTP client for API communication
+
+---
+
+## ✨ Features
+
+- 📱 **Responsive Design**
+  Optimized for various screen sizes, from mobile to desktop
+
+- 🌙 **Dark Mode Support**
+  Built-in theme switching for better user experience in low-light environments
+
+- ⚡ **Efficient Data Fetching**
+  Leveraging TanStack Query for caching and synchronization
+
+---
+
+## ⚙️ Installation & Setup
+
+This project can be run using either **Docker** or **PNPM**, depending on your preferred workflow.
+
+---
+
+## ▶️ How to Run
+
+### 🐳 Run with Docker
+
+Make sure Docker is installed on your system.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Build the Docker image
+docker build -t dam-neural-classifier .
+
+# Run the container
+docker run -p 3000:3000 dam-neural-classifier
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 📦 Run with PNPM
 
-To learn more about Next.js, take a look at the following resources:
+Make sure **Node.js** and **pnpm** are installed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Install dependencies
+pnpm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start development server
+pnpm dev
+```
 
-## Deploy on Vercel
+Then open:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Deployment
+
+The application is deployed on **Vercel**:
+
+- 🔗 **Live Application**
+  [https://dam-creamy-cream.vercel.app/](https://dam-creamy-cream.vercel.app/)
+
+- 💻 **Source Code**
+  [https://github.com/adamandp/dam-creamy-cream](https://github.com/adamandp/dam-creamy-cream)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/           # Next.js App Router (pages, layouts, routing logic)
+├── components/    # Reusable UI components
+│   ├── icon/      # Custom icon components
+│   └── ui/        # Base UI components (shadcn-based)
+├── hooks/         # Custom React hooks
+├── lib/           # Core utilities, API configs, and shared logic
+├── providers/     # Context providers (theme, query client, etc.)
+├── types/         # TypeScript type definitions
+├── utils/         # Helper functions
+```
+
+---
+
+## 🚧 Future Improvements
+
+- Integration with real machine learning models
+- Upload and processing of real brain signal datasets
+- Improved data visualization (charts, signal graphs)
+- Better error handling and loading states
+
+---
+
+## 👤 Author
+
+**Adam Andana Putra**
+
+- GitHub: [https://github.com/adamandp](https://github.com/adamandp)
+- Email: [adamanandaputra@gmail.com](mailto:adamanandaputra@gmail.com)
+
+---
+
+## 📄 License
+
+This project is intended for educational and experimental purposes.
+You are free to use, modify, and distribute it as needed.
+
+---
